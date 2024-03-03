@@ -14,7 +14,7 @@ header {
 }
 
 nav {
-    background-color: #E7B7A0;
+    background-color: #D0947A;
     color: #EFE6DD;
     text-align: center;
     padding: 10px 0;
@@ -22,7 +22,7 @@ nav {
 }
 
 nav ul {
-    background-color: #E7B7A0;
+    background-color: #D0947A;
     color: #EFE6DD;
     text-align: center;
     padding: 20px 0; /* Increase the top and bottom padding */
@@ -43,24 +43,37 @@ nav ul li a {
     font-size: 24px;
 }
 
+nav ul li a.active:before {
+    content: '';
+    display: inline-block;
+    width: 10px; /* Adjust the width of the circle */
+    height: 10px; /* Adjust the height of the circle */
+    border-radius: 50%; /* Make it a circle */
+    background-color: #E6B370; /* Change the color of the circle */
+    margin-right: 5px; /* Adjust spacing between circle and text */
+}
+
+.image-container {
+    text-align: center;
+}
+
 /* Center the image */
 .centered-image {
-    display: block;
-    margin: 0 auto;
-    width: 500px;
+    width: 80%;
     height: auto;
 }
 
 .corner-image {
     position: absolute;
-    top: 10px; /* Adjust the top position as needed */
-    left: 10px; /* Set left position to move the image to the left corner */
+    top: 15px; /* Adjust the top position as needed */
+    left: 20px; /* Set left position to move the image to the left corner */
     width: auto; /* Maintain aspect ratio */
-    height: 100px; /* Adjust the height of the image to equal the height of the nav */
+    height: 30px; /* Adjust the height of the image to equal the height of the nav */
 }
 
 .color-square {
-    width: 150px; /* Adjust the width */
-    height: 150px; /* Adjust the height */
+    width: 100px; /* Adjust the width */
+    height: 100px; /* Adjust the height */
     margin: 10px;
+    border: rgb(255, 255, 255);
   }
