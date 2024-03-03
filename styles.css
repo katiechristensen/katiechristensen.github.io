@@ -1,11 +1,10 @@
 /* Add your CSS styles here */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Verdana, Geneva, sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Ensure footer sticks to bottom */
     background-color: #EFE6DD;
 }
 
@@ -41,19 +40,15 @@ nav ul li a {
     text-decoration: none;
     color: #EFE6DD;
     font-weight: bold;
-}
-
-footer {
-    background-color: #E7B7A0;
-    color: #EFE6DD;
-    text-align: center;
-    padding: 10px 0;
+    font-size: 24px;
 }
 
 /* Center the image */
 .centered-image {
     display: block;
     margin: 0 auto;
+    width: 500px;
+    height: auto;
 }
 
 .corner-image {
@@ -61,12 +56,11 @@ footer {
     top: 10px; /* Adjust the top position as needed */
     left: 10px; /* Set left position to move the image to the left corner */
     width: auto; /* Maintain aspect ratio */
-    height: 30px; /* Adjust the height of the image to equal the height of the nav */
+    height: 100px; /* Adjust the height of the image to equal the height of the nav */
 }
 
 .color-square {
     width: 150px; /* Adjust the width */
     height: 150px; /* Adjust the height */
     margin: 10px;
-    float: left;
   }
