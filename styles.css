@@ -15,21 +15,21 @@ header {
 }
 
 nav {
-    background-color: #E6B370;
-    color: #B97836;
+    background-color: #E7B7A0;
+    color: #EFE6DD;
     text-align: center;
     padding: 10px 0;
     margin-top: auto; /* Move the navigation bar to the bottom */
 }
 
 nav ul {
-    background-color: #E6B370;
-    color: #B97836;
+    background-color: #E7B7A0;
+    color: #EFE6DD;
     text-align: center;
     padding: 20px 0; /* Increase the top and bottom padding */
     margin-top: auto; /* Move the navigation bar to the bottom */
     position: relative; /* Add position relative to use absolute positioning within it */
-    height: 60px; /* Adjust the height of the navigation bar */
+    height: 30px; /* Adjust the height of the navigation bar */
 }
 
 nav ul li {
@@ -39,13 +39,13 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #B97836;
+    color: #EFE6DD;
     font-weight: bold;
 }
 
 footer {
-    background-color: #E6B370;
-    color: #B97836;
+    background-color: #E7B7A0;
+    color: #EFE6DD;
     text-align: center;
     padding: 10px 0;
 }
@@ -56,9 +56,17 @@ footer {
     margin: 0 auto;
 }
 
-/* Corner Image */
 .corner-image {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 10px; /* Adjust the top position as needed */
+    left: 10px; /* Set left position to move the image to the left corner */
+    width: auto; /* Maintain aspect ratio */
+    height: 30px; /* Adjust the height of the image to equal the height of the nav */
 }
+
+.color-square {
+    width: 150px; /* Adjust the width */
+    height: 150px; /* Adjust the height */
+    margin: 10px;
+    float: left;
+  }
