@@ -43,24 +43,14 @@ nav ul li a {
     font-size: 24px;
 }
 
-nav ul li a.active:before {
-    content: '';
-    display: inline-block;
-    width: 10px; /* Adjust the width of the circle */
-    height: 10px; /* Adjust the height of the circle */
-    border-radius: 50%; /* Make it a circle */
-    background-color: #E6B370; /* Change the color of the circle */
-    margin-right: 5px; /* Adjust spacing between circle and text */
-}
-
 .image-container {
     text-align: center;
 }
 
 /* Center the image */
 .centered-image {
-    width: auto;
-    height: 90%;
+    width: 70%;
+    height: auto;
 }
 
 .corner-image {
