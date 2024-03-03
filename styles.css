@@ -59,8 +59,8 @@ nav ul li a.active:before {
 
 /* Center the image */
 .centered-image {
-    width: 80%;
-    height: auto;
+    width: auto;
+    height: 90%;
 }
 
 .corner-image {
@@ -68,7 +68,7 @@ nav ul li a.active:before {
     top: 15px; /* Adjust the top position as needed */
     left: 20px; /* Set left position to move the image to the left corner */
     width: auto; /* Maintain aspect ratio */
-    height: 30px; /* Adjust the height of the image to equal the height of the nav */
+    height: 150px; /* Adjust the height of the image to equal the height of the nav */
 }
 
 .color-square {
