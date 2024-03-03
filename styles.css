@@ -6,6 +6,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh; /* Ensure footer sticks to bottom */
+    background-color: #EFE6DD;
 }
 
 header {
@@ -22,9 +23,13 @@ nav {
 }
 
 nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+    background-color: #E6B370;
+    color: #B97836;
+    text-align: center;
+    padding: 20px 0; /* Increase the top and bottom padding */
+    margin-top: auto; /* Move the navigation bar to the bottom */
+    position: relative; /* Add position relative to use absolute positioning within it */
+    height: 60px; /* Adjust the height of the navigation bar */
 }
 
 nav ul li {
@@ -34,13 +39,26 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #fff;
+    color: #B97836;
     font-weight: bold;
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #E6B370;
+    color: #B97836;
     text-align: center;
     padding: 10px 0;
+}
+
+/* Center the image */
+.centered-image {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Corner Image */
+.corner-image {
+    position: absolute;
+    top: 10px;
+    right: 10px;
 }
