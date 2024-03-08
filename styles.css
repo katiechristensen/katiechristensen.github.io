@@ -26,19 +26,20 @@ nav ul {
     padding: 10 0; /* Increase the top and bottom padding */
     margin-top: auto; /* Move the navigation bar to the bottom */
     position: relative; /* Add position relative to use absolute positioning within it */
-    height: 30px; /* Adjust the height of the navigation bar */
+    height: 10px; /* Adjust the height of the navigation bar */
 }
 
 nav ul li {
     display: inline;
     margin-right: 20px;
+    padding: 8px;
 }
 
 nav ul li a {
     text-decoration: none;
     color: #D0947A;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 22px;
 }
 
 nav ul li a:hover {
@@ -64,7 +65,7 @@ nav ul li a:hover {
 
 .corner-image {
     position: absolute;
-    top: 29px; /* Adjust the top position as needed */
+    top: 19px; /* Adjust the top position as needed */
     left: 30px; /* Set left position to move the image to the left corner */
     width: auto; /* Maintain aspect ratio */
     height: 90px; /* Adjust the height of the image to equal the height of the nav */
