@@ -3,23 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Katie Christensen</title>
+    <title>About</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <nav>
             <ul>
+                <li><a href="https://www.linkedin.com/in/katie-r-christensen/">LinkedIn</a></li>
+                <li><a href="https://github.com/katiechristensen">GitHub</a></li>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
                 <li><a href="projects.html">Projects</a></li>
-                <li><a href="colors.html">Color Palette</a></li>
             </ul>
+            <a href="index.html"><img src="images/KC_light.pdf" alt="KC" class="corner-image"></a>
         </nav>
     </header>
-    
-    <div class="image-container">
-        <img src="images/KCgif.gif" alt="KC" class="centered-image"> 
+
+<style>
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 45%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.row {
+    padding: 0 0 0 150px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 12px 0 #E7B7A0;
+}
+
+.about-section {
+  padding: 30px;
+  text-align: center;
+  background-color: #E7B7A0;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #B97836;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #E6B370;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+
+<div class="about-section">
+    <h1>Hi, I'm Katie Christensen!</h1>
+    <p>I am a Computer Science graduate student.</p>
+  </div>
+  
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <img src="images/headshot.JPG" alt="Headshot" style="width:100%">
+        <div class="container">
+          <h2>MS Computer Science</h2>
+          <p class="title">Full-Time Graduate Student</p>
+          <p>Graduating June 2024</p>
+        </div>
+      </div>
     </div>
+  
+    <div class="column">
+      <div class="card">
+        <img src="images/grad.JPG" alt="GradHeadshot" style="width:100%">
+        <div class="container">
+          <h2>BS Computer Science</h2>
+          <p class="title">Biology Minor</p>
+          <p>Graduated Spring 2023</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </body>
 </html>

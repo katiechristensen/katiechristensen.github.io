@@ -14,18 +14,16 @@ header {
 }
 
 nav {
-    background-color: #D0947A;
-    color: #EFE6DD;
-    text-align: center;
-    padding: 10px 0;
+    color: #D0947A;
+    text-align: right;
+    padding: 30px 30px;
     margin-top: auto; /* Move the navigation bar to the bottom */
 }
 
 nav ul {
-    background-color: #D0947A;
-    color: #EFE6DD;
-    text-align: center;
-    padding: 20px 0; /* Increase the top and bottom padding */
+    color: #D0947A;
+    text-align: right;
+    padding: 10 0; /* Increase the top and bottom padding */
     margin-top: auto; /* Move the navigation bar to the bottom */
     position: relative; /* Add position relative to use absolute positioning within it */
     height: 30px; /* Adjust the height of the navigation bar */
@@ -38,21 +36,17 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #EFE6DD;
+    color: #D0947A;
     font-weight: bold;
     font-size: 24px;
 }
 
+nav ul li a:hover {
+    color: #E6B370;
+  }
+
 .image-container {
     text-align: center;
-}
-
-.about-image-container {
-    display: flex;
-    flex-direction: row;
-    flex: 1;
-    text-align: right;
-    padding: 20px;
 }
 
 .about-text {
@@ -64,20 +58,20 @@ nav ul li a {
 
 /* Center the image */
 .centered-image {
-    width: 70%;
+    width: 40%;
     height: auto;
 }
 
 .corner-image {
     position: absolute;
-    top: 15px; /* Adjust the top position as needed */
-    left: 20px; /* Set left position to move the image to the left corner */
+    top: 29px; /* Adjust the top position as needed */
+    left: 30px; /* Set left position to move the image to the left corner */
     width: auto; /* Maintain aspect ratio */
-    height: 100px; /* Adjust the height of the image to equal the height of the nav */
+    height: 90px; /* Adjust the height of the image to equal the height of the nav */
 }
 
 .color-square {
-    width: 100px; /* Adjust the width */
+    width: 250px; /* Adjust the width */
     height: 100px; /* Adjust the height */
-    margin: 10px;
+    margin: 5px;
   }

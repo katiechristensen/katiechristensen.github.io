@@ -3,25 +3,173 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
+    <title>About</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <nav>
             <ul>
+                <li><a href="https://www.linkedin.com/in/katie-r-christensen/">LinkedIn</a></li>
+                <li><a href="https://github.com/katiechristensen">GitHub</a></li>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
                 <li><a href="projects.html">Projects</a></li>
-                <li><a href="colors.html">Color Palette</a></li>
             </ul>
-            <img src="images/KC_light.pdf" alt="KC" class="corner-image">
+            <a href="index.html"><img src="images/KC_light.pdf" alt="KC" class="corner-image"></a>
         </nav>
     </header>
-    
-    <main>
-        <h1>Projects</h1>
-        <p>This page showcases my projects.</p>
-    </main>
+
+<style>
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 12px 0 #E7B7A0;
+}
+
+.about-section {
+  padding: 30px;
+  text-align: center;
+  background-color: #E7B7A0;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #B97836;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #E6B370;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+
+<div class="about-section">
+    <h1>My Favorite Projects</h1>
+    <p>Read about some of my recent projects and publications.</p>
+  </div>
+  
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <img src="images/bio.jpg" alt="Bio" style="width:100%">
+        <div class="container">
+          <h2>Machine Learning Research Assistant</h2>
+          <p class="title">Hutchinson Machine Learning Research Group</p>
+          <p>Predicting Rosetta metrics for unseen mutant amino acid sequences with double InDel mutations.</p>
+          <a href="https://arxiv.org/abs/2310.13806"><p><button class="button">Check out our latest paper!</button></p></a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card">
+        <img src="images/esmdiff.jpg" alt="ESMDiff" style="width:100%">
+        <div class="container">
+          <h2>Machine Learning Research Assistant</h2>
+          <p class="title">Hutchinson Machine Learning Research Group</p>
+          <p>Generating joint precipitation and temperature spatio-temporal samples by approximating Earth System Models using Diffusion Models.</p>
+          <a href="Link"><p><button class="button">Check out our latest paper!</button></p></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+        <div class="card">
+          <img src="images/tmobile.jpeg" alt="TMobile" style="width:100%">
+          <div class="container">
+            <h2>Software Engineer Intern</h2>
+            <p class="title">T-Mobile - Digital AI/ML, Bellevue, WA</p>
+            <p>Leveraged customer digital behavior for proactive churn and call to Care reduction by identifying web pages with elevated churn and call rates.</p>
+            <a href="https://careers.t-mobile.com/meet-our-teams/technology/product-technology/"><p><button class="button">Technology Org</button></p></a>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <div class="row">
+    <div class="column">
+        <div class="card">
+          <img src="images/isb.jpeg" alt="ISB" style="width:100%">
+          <div class="container">
+            <h2>Software Engineer Intern</h2>
+            <p class="title">Institute for Systems Biology (ISB), Seattle, WA</p>
+            <p>Developed a graph-based application programming interface designed to expose knowledge graphs.</p>
+            <a href="https://isbscience.org/people/labs/shmulevich-lab/"><p><button class="button">Schmulevich Lab</button></p></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+            <img src="images/headshot2.JPG" alt="ta" style="width:100%">
+            <div class="container">
+                <h2>Graduate Teaching Assistant</h2>
+                <p class="title">Full-Time, CS Department</p>
+                <p>Fostering a dynamic learning environment, encouraging active student participation and critical thinking.</p>
+                <a href="https://cs.wwu.edu/chris90"><p><button class="button">Graduate Students - Katie Christensen</button></p></a>
+              </div>
+          </div>
+      </div>
+
+    <div class="column">
+        <div class="card">
+          <img src="images/agic.jpeg" alt="agic" style="width:100%">
+          <div class="container">
+            <h2>Outreach Coordinator and Active Member</h2>
+            <p class="title">Association for Gender Inclusion and Computing (AGIC)</p>
+            <p>Previously Association for Women in Computing. Girls Who Code College Loop.</p>
+            <a href="https://www.instagram.com/wwuagic/"><p><button class="button">Check out our Instagram!</button></p></a>
+          </div>
+        </div>
+      </div>
+    </div>
+        
+
 </body>
 </html>
