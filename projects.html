@@ -7,19 +7,31 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="https://www.linkedin.com/in/katie-r-christensen/">LinkedIn</a></li>
-                <li><a href="https://github.com/katiechristensen">GitHub</a></li>
-                <li><a href="https://scholar.google.com/citations?user=mkES_psAAAAJ&hl=en&oi=sra">Google Scholar</a></li>
-                <li><a href="https://orcid.org/0009-0004-3270-7964">ORCID</a></li>
-            </ul>
-            <a href="index.html"><img src="images/KC.pdf" alt="KC" class="corner-image"></a>
-        </nav>
-    </header>
+  <header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropbtn"><a href="publications.html">Publications</a></a>
+                <div class="dropdown-content">
+                  <a href="https://scholar.google.com/citations?user=mkES_psAAAAJ&hl=en&oi=sra">Google Scholar</a>
+                  <a href="https://orcid.org/0009-0004-3270-7964">ORCID</a>
+                </div>
+           </li>
+           <li class="dropdown">
+            <a href="#" class="dropbtn"><a href="contact.html">Contact</a></a>
+              <div class="dropdown-content">
+                <a href="https://www.linkedin.com/in/katie-r-christensen/">LinkedIn</a>
+                <a href="https://github.com/katiechristensen">GitHub</a>
+              </div>
+         </li>
+            
+        </ul>
+        <a href="index.html"><img src="images/name.png" alt="KC" class="corner-image"></a>
+    </nav>
+</header>
 
 <style>
 html {
@@ -40,6 +52,8 @@ html {
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin: 8px;
+  color: #192231;
+  text-align: center;
 }
 
 .card:hover {
@@ -49,8 +63,8 @@ html {
 .about-section {
   padding: 30px;
   text-align: center;
-  background-color: #E7B7A0;
-  color: white;
+  background-color: #192231;
+  color: #EFE6DD;
 }
 
 .container {
@@ -99,35 +113,35 @@ html {
   <div class="row">
     <div class="column">
       <div class="card">
-        <img src="images/bio.jpg" alt="Bio" style="width:100%">
+        <img src="images/scholarsweek.JPG" alt="ESMDiff" style="width:100%">
         <div class="container">
-          <h2>Machine Learning Research Assistant</h2>
+          <h2>ML Research Assistant</h2>
           <p class="title">Hutchinson Machine Learning Research Group</p>
-          <p>Predicting Rosetta metrics for unseen mutant amino acid sequences with double InDel mutations through <a href="https://fw.cs.wwu.edu/~hutchib2/hutchresearch.html">HutchResearch</a>.</p>
-          <a href="https://arxiv.org/abs/2310.13806"><p><button class="button">Check out our latest paper</button></p></a>
-        </div>
-      </div>
-    </div>
-  
-    <div class="column">
-      <div class="card">
-        <img src="images/esmdiff.jpg" alt="ESMDiff" style="width:100%">
-        <div class="container">
-          <h2>Machine Learning Research Assistant</h2>
-          <p class="title">Hutchinson Machine Learning Research Group</p>
-          <p>Generating joint precipitation and temperature spatio-temporal samples by approximating Earth System Models using Diffusion Models through <a href="https://fw.cs.wwu.edu/~hutchib2/hutchresearch.html">HutchResearch</a>.</p>
+          <p>Generating joint precipitation and temperature spatio-temporal samples by emulating Earth System Models using Diffusion Models through <a href="https://fw.cs.wwu.edu/~hutchib2/hutchresearch.html">HutchResearch</a>. <br><br> Here, I am presenting at Scholars Week at WWU.</p>
           <p><button class="button">Check back soon for our latest paper</button></p>
         </div>
       </div>
     </div>
 
     <div class="column">
+      <div class="card">
+        <img src="images/bioscholarsweek.JPG" alt="Bio" style="width:95%">
+        <div class="container">
+          <h2>ML Research Assistant</h2>
+          <p class="title">Hutchinson Machine Learning Research Group</p>
+          <p>Predicting Rosetta metrics for unseen mutant amino acid sequences with double InDel mutations through <a href="https://fw.cs.wwu.edu/~hutchib2/hutchresearch.html">HutchResearch</a>.<br><br> Here, I am presenting at Scholars Week at WWU.</p>
+          <a href="https://arxiv.org/abs/2310.13806"><p><button class="button">Check out our latest paper</button></p></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
         <div class="card">
-          <img src="images/tmobile.jpeg" alt="TMobile" style="width:100%">
+          <img src="images/selfie.JPG" alt="TMobile" style="width:100%">
           <div class="container">
             <h2>Software Engineer Intern</h2>
             <p class="title">T-Mobile - Digital AI/ML, Bellevue, WA</p>
-            <p>Leveraged customer digital behavior for proactive churn and call to Care reduction by identifying web pages with elevated churn and call rates.</p>
+            <p>Leveraged customer digital behavior for proactive churn and call to Care reduction by identifying web pages with elevated churn and call rates.<br><br> Here is a selfie with CEO Mike Sievert.</p>
             <a href="https://careers.t-mobile.com/meet-our-teams/technology/product-technology/"><p><button class="button">Read about the Technology organization at T-Mobile</button></p></a>
           </div>
         </div>
@@ -137,11 +151,11 @@ html {
   <div class="row">
     <div class="column">
         <div class="card">
-          <img src="images/isb.jpeg" alt="ISB" style="width:100%">
+          <img src="images/isbposter.jpg" alt="ISB" style="width:100%">
           <div class="container">
             <h2>Software Engineer Intern</h2>
             <p class="title">Institute for Systems Biology (ISB), Seattle, WA</p>
-            <p>Developed a graph-based application programming interface designed to expose knowledge graphs.</p>
+            <p>Developed a graph-based application programming interface designed to expose knowledge graphs.<br><br>Here, I am presenting at a poster session at ISB.</p>
             <a href="https://isbscience.org/people/labs/shmulevich-lab/"><p><button class="button">Read about the Schmulevich Lab at ISB</button></p></a>
           </div>
         </div>
@@ -149,24 +163,24 @@ html {
 
       <div class="column">
         <div class="card">
-            <img src="images/headshot02.JPG" alt="ta" style="width:100%">
-            <div class="container">
-                <h2>Graduate Teaching Assistant</h2>
-                <p class="title">Full-Time, CS Department</p>
-                <p>Fostering a dynamic learning environment, encouraging active student participation and critical thinking.</p>
-                <a href="https://cs.wwu.edu/chris90"><p><button class="button">View my page on the Graduate Student Directory</button></p></a>
-              </div>
+          <img src="images/imposter.jpg" alt="AGIC" style="width:100%">
+          <div class="container">
+            <h2>Imposter Syndrome Workshop</h2>
+            <p class="title">Department of Computer Science</p>
+            <p>Led a workshop on Imposter Syndrome to the CS Department at WWU through the Association for Gender Inclusion in Computing.</p>
+            <a href="https://www.instagram.com/wwuagic/"><p><button class="button">Read about our club</button></p></a>
           </div>
+        </div>
       </div>
 
     <div class="column">
         <div class="card">
-          <img src="images/agic.jpg" alt="agic" style="width:100%">
+          <img src="images/GA.jpg" alt="GA" style="width:100%">
           <div class="container">
-            <h2>Outreach Coordinator and Active Member</h2>
-            <p class="title">Association for Gender Inclusion in Computing</p>
-            <p>Previously Association for Women in Computing. Girls Who Code College Loop.</p>
-            <a href="https://www.instagram.com/wwuagic/"><p><button class="button">Read about our club</button></p></a>
+            <h2>Lecture on Genetic Algorithms</h2>
+            <p class="title">Department of Computer Science</p>
+            <p>Led a lecture on Genetic Algorithms in the Machine Learning course at WWU.</p>
+            <a href="link"><p><button class="button">Here</button></p></a>
           </div>
         </div>
       </div>

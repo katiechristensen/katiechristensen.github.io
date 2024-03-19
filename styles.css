@@ -26,7 +26,7 @@ nav ul {
     padding: 10 0; /* Increase the top and bottom padding */
     margin-top: auto; /* Move the navigation bar to the bottom */
     position: relative; /* Add position relative to use absolute positioning within it */
-    height: 10px; /* Adjust the height of the navigation bar */
+    height: 5px; /* Adjust the height of the navigation bar */
 }
 
 nav ul li {
@@ -37,14 +37,39 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #D0947A;
-    font-weight: bold;
+    color: #494E6B;
     font-size: 22px;
 }
 
 nav ul li a:hover {
     color: #E6B370;
   }
+
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #EFE6DD;
+    min-width: 160px;
+    z-index: 1;
+    padding: 8px 0;
+    right: 0;
+}
+
+.dropdown-content a {
+    color: #494E6B;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 
 .image-container {
     text-align: center;

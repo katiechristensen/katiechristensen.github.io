@@ -11,13 +11,25 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="projects.html">Projects</a></li>
-                <li><a href="https://www.linkedin.com/in/katie-r-christensen/">LinkedIn</a></li>
-                <li><a href="https://github.com/katiechristensen">GitHub</a></li>
-                <li><a href="https://scholar.google.com/citations?user=mkES_psAAAAJ&hl=en&oi=sra">Google Scholar</a></li>
-                <li><a href="https://orcid.org/0009-0004-3270-7964">ORCID</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropbtn"><a href="publications.html">Publications</a></a>
+                    <div class="dropdown-content">
+                      <a href="https://scholar.google.com/citations?user=mkES_psAAAAJ&hl=en&oi=sra">Google Scholar</a>
+                      <a href="https://orcid.org/0009-0004-3270-7964">ORCID</a>
+                    </div>
+               </li>
+               <li class="dropdown">
+                <a href="#" class="dropbtn"><a href="contact.html">Contact</a></a>
+                  <div class="dropdown-content">
+                    <a href="https://www.linkedin.com/in/katie-r-christensen/">LinkedIn</a>
+                    <a href="https://github.com/katiechristensen">GitHub</a>
+                  </div>
+             </li>
+                
             </ul>
-            <a href="index.html"><img src="images/KC.pdf" alt="KC" class="corner-image"></a>
+            <a href="index.html"><img src="images/name.png" alt="KC" class="corner-image"></a>
         </nav>
     </header>
 
@@ -44,6 +56,7 @@ html {
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin: 8px;
+  color: #192231;
 }
 
 .card:hover {
@@ -53,8 +66,8 @@ html {
 .about-section {
   padding: 30px;
   text-align: center;
-  background-color: #E7B7A0;
-  color: white;
+  background-color: #192231;
+  color: #EFE6DD;
 }
 
 .container {
@@ -96,7 +109,7 @@ html {
 </style>
 
 <div class="about-section">
-    <h1>Hi, I'm Katie Christensen!</h1>
+    <h1>Hi, I'm Katie Christensen</h1>
     <p>I am a Computer Science graduate student.</p>
   </div>
   

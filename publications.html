@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katie Christensen</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropbtn"><a href="publications.html">Publications</a></a>
+                <div class="dropdown-content">
+                  <a href="https://scholar.google.com/citations?user=mkES_psAAAAJ&hl=en&oi=sra">Google Scholar</a>
+                  <a href="https://orcid.org/0009-0004-3270-7964">ORCID</a>
+                </div>
+           </li>
+           <li class="dropdown">
+            <a href="#" class="dropbtn"><a href="contact.html">Contact</a></a>
+              <div class="dropdown-content">
+                <a href="https://www.linkedin.com/in/katie-r-christensen/">LinkedIn</a>
+                <a href="https://github.com/katiechristensen">GitHub</a>
+              </div>
+         </li>
+            
+        </ul>
+        <a href="index.html"><img src="images/name.png" alt="KC" class="corner-image"></a>
+    </nav>
+</header>
+
+<style>
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 45%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.row {
+    padding: 0 0 0 150px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+  color: #192231;
+  text-align: center;
+}
+
+.card:hover {
+  box-shadow: 0 8px 12px 0 #E7B7A0;
+}
+
+.about-section {
+  padding: 30px;
+  text-align: center;
+  background-color: #192231;
+  color: #EFE6DD;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: #EFE6DD;
+  background-color: #192231;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #E6B370;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+
+<div class="about-section">
+    <h1>View My Google Scholar and ORCID</h1>
+  </div>
+  
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <a href="https://scholar.google.com/citations?user=mkES_psAAAAJ&hl=en&oi=sra"><img src="images/google.png" alt="Google" style="width:80%"></a>
+        <div class="container">
+          <h2>Google Scholar</h2>
+          <a href="https://scholar.google.com/citations?user=mkES_psAAAAJ&hl=en&oi=sra"><p><button class="button">Choose the image or click here to view</button></p></a>
+        </div>
+      </div>
+    </div> 
+    <div class="column">
+      <div class="card">
+        <a href="https://orcid.org/0009-0004-3270-7964"><img src="images/orcid.png" alt="orcid" style="width:86%"></a>
+        <div class="container">
+            <h2>ORCID</h2>
+            <a href="https://orcid.org/0009-0004-3270-7964"><p><button class="button">Choose the image or click here to view</button></p></a>
+        </div>
+    </div>
+    </div>
+  </div>
+
+</body>
+</html>
