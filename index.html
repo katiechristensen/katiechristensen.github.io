@@ -29,113 +29,69 @@
              </li>
                 
             </ul>
-            <a href="index.html"><img src="images/name.png" alt="KC" class="corner-image"></a>
+            <!-- <a href="index.html"><img src="images/good/KC_new.gif" alt="KC" class="corner-image"></a> -->
         </nav>
     </header>
 
 <style>
-html {
-  box-sizing: border-box;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-.column {
-  float: left;
-  width: 45%;
-  margin-bottom: 16px;
-  padding: 0 8px;
-}
-
-.row {
-    padding: 0 0 0 150px;
-}
-
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 8px;
-  color: #192231;
-}
-
-.card:hover {
-  box-shadow: 0 8px 12px 0 #E7B7A0;
-}
-
-.about-section {
-  padding: 30px;
-  text-align: center;
-  background-color: #192231;
-  color: #EFE6DD;
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
 }
 
 .container {
-  padding: 0 16px;
-}
-
-.container::after, .row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.title {
-  color: grey;
-}
-
-.button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #B97836;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-}
-
-.button:hover {
-  background-color: #E6B370;
-}
-
-@media screen and (max-width: 650px) {
-  .column {
+    display: flex;
+    max-width: 1200px;
     width: 100%;
-    display: block;
-  }
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    /* color: #494E6B; */
+}
+
+.text-section, .image-section {
+    padding: 20px;
+}
+
+.text-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.image-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
 }
 </style>
 
-<div class="about-section">
-    <h1>Hi, I'm Katie Christensen</h1>
-    <p>I am a Computer Science graduate student.</p>
-  </div>
-  
-  <div class="row">
-    <div class="column">
-      <div class="card">
-        <img src="images/headshot.JPG" alt="Headshot" style="width:100%">
-        <div class="container">
-          <h2>MS Computer Science</h2>
-          <p class="title">Research and Teaching Assistant | Track Global Fellowship in Computer Science</p>
-          <p>Graduating June 2024</p>
-        </div>
-      </div>
+  <div class="container">
+    <div class="text-section">
+        <h1>Hello! I'm Katie Christensen.</h1>
+        <h2>MS Computer Science</h2>
+        <p>Western Washington University, June 2024</p>
+        <!-- <h3>BS Computer Science, Biology Minor</h3>
+        <p>Western Washington University, June 2023</p> -->
     </div>
-  
-    <div class="column">
-      <div class="card">
-        <img src="images/grad.JPG" alt="GradHeadshot" style="width:100%">
-        <div class="container">
-          <h2>BS Computer Science</h2>
-          <p class="title">Biology Minor | Research Assistant | Computer Science Pre-Master's Program</p>
-          <p>Graduated June 2023</p>
-        </div>
-      </div>
+    <div class="image-section">
+        <img src="images/good/headshot.JPG" alt="Picture of Katie Christensen">
     </div>
   </div>
+
 
 </body>
 </html>

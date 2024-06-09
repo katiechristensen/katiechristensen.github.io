@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Katie Christensen</title>
+    <title>Contact</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -29,111 +29,103 @@
          </li>
             
         </ul>
-        <a href="index.html"><img src="images/name.png" alt="KC" class="corner-image"></a>
+        <a href="index.html"><img src="images/good/KC_new.gif" alt="KC" class="corner-image"></a>
     </nav>
 </header>
 
 <style>
-html {
-  box-sizing: border-box;
+.content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-*, *:before, *:after {
-  box-sizing: inherit;
+.intro {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
-.column {
-  float: left;
-  width: 45%;
-  margin-bottom: 16px;
-  padding: 0 8px;
+.intro img {
+    border-radius: 50%;
+    margin-right: 20px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
 }
 
-.row {
-    padding: 0 0 0 150px;
+.intro-text h2 {
+    margin: 0 0 10px 0;
 }
 
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 8px;
-  color: #192231;
-  text-align: center;
+.details {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-.card:hover {
-  box-shadow: 0 8px 12px 0 #E7B7A0;
+.detail {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.about-section {
-  padding: 30px;
-  text-align: center;
-  background-color: #192231;
-  color: #EFE6DD;
+.detail img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 10px;
 }
 
-.container {
-  padding: 0 16px;
+.scrolling-text {
+    text-align: center;
+    margin: 40px 0;
 }
 
-.container::after, .row::after {
-  content: "";
-  clear: both;
-  display: table;
+.scrolling-text h2 {
+    animation: scroll 5s linear infinite;
 }
 
-.title {
-  color: grey;
+@keyframes scroll {
+    0% { opacity: 0; transform: translateY(20px); }
+    50% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; transform: translateY(-20px); }
 }
 
-.button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: #EFE6DD;
-  background-color: #192231;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
+.more-info {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
 }
 
-.button:hover {
-  background-color: #E6B370;
-}
-
-@media screen and (max-width: 650px) {
-  .column {
-    width: 100%;
-    display: block;
-  }
-}
 </style>
-
-<div class="about-section">
-    <h1>View My LinkedIn and GitHub</h1>
-  </div>
-  
-  <div class="row">
-    <div class="column">
-      <div class="card">
-        <a href="https://github.com/katiechristensen"><img src="images/github.png" alt="GitHub" style="width:80%"></a>
-        <div class="container">
-          <h2>GitHub: katiechristensen</h2>
-          <a href="https://github.com/katiechristensen"><p><button class="button">Choose the image or click here to view</button></p></a>
-        </div>
-      </div>
+<body>
+    <div class="content">
+        <section class="intro">
+            <div class="intro-text">
+                <h2>Contact me</h2>
+            </div>
+        </section>
+        <section class="details">
+            <div class="detail">
+                <img src="images/good/linkedin.jpg" alt="LinkedIn logo">
+                <p> Check out my LinkedIn profile:
+                    <a href="https://www.linkedin.com/in/katie-r-christensen/">katie-r-christensen</a></p>
+            </div>
+            <div class="detail">
+                <img src="images/good/github.png" alt="GitHub logo">
+                <p> Check out my GitHub account:
+                    <a href="https://github.com/katiechristensen">katiechristensen</a></p>
+            </div>
+        </section>
+        
     </div>
-  
-    <div class="column">
-      <div class="card">
-        <a href="https://www.linkedin.com/in/katie-r-christensen/"><img src="images/linkedin.jpg" alt="LinkedIn" style="width:80%"></a>
-        <div class="container">
-            <h2>LinkedIn: katie-r-christensen</h2>
-            <a href="https://www.linkedin.com/in/katie-r-christensen/"><p><button class="button">Choose the image or click here to view</button></p></a>
-        </div>
-    </div>
-    </div>
-  </div>
-
 </body>
 </html>

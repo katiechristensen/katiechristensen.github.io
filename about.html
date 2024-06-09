@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
+    <title>About Me</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -29,166 +29,125 @@
          </li>
             
         </ul>
-        <a href="index.html"><img src="images/name.png" alt="KC" class="corner-image"></a>
+        <a href="index.html"><img src="images/good/KC_new.gif" alt="KC" class="corner-image"></a>
     </nav>
 </header>
 
 <style>
-html {
-  box-sizing: border-box;
+.content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-*, *:before, *:after {
-  box-sizing: inherit;
+.intro {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
-.column {
-  float: left;
-  width: 33.33%;
-  margin-bottom: 16px;
-  padding: 0 8px;
+.intro img {
+    border-radius: 50%;
+    margin-right: 20px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
 }
 
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 8px;
-  color: #192231;
-  text-align: center;
+.intro-text h2 {
+    margin: 0 0 10px 0;
 }
 
-.card:hover {
-  box-shadow: 0 8px 12px 0 #E7B7A0;
+.details {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-.about-section {
-  padding: 30px;
-  text-align: center;
-  background-color: #192231;
-  color: #EFE6DD;
+.detail {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.container {
-  padding: 0 16px;
+.detail img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 10px;
 }
 
-.container::after, .row::after {
-  content: "";
-  clear: both;
-  display: table;
+.scrolling-text {
+    text-align: center;
+    margin: 40px 0;
 }
 
-.title {
-  color: grey;
+.scrolling-text h2 {
+    animation: scroll 5s linear infinite;
 }
 
-.button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #B97836;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
+@keyframes scroll {
+    0% { opacity: 0; transform: translateY(20px); }
+    50% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; transform: translateY(-20px); }
 }
 
-.button:hover {
-  background-color: #E6B370;
+.more-info {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
 }
 
-@media screen and (max-width: 650px) {
-  .column {
-    width: 100%;
-    display: block;
-  }
-}
 </style>
-
-<div class="about-section">
-    <h1>About Me</h1>
-    <p>Read about my recent projects and publications.</p>
-  </div>
-
-  <div class="row">
-    <div class="column">
-        <div class="card">
-            <img src="images/grad.jpg" alt="grad" style="width:97%">
-            <div class="container">
-                <h2>BS in CS, Biology Minor</h2>
-                <p class="title">Graduated</p>
-                <p>Graduated June 2023. Finishing my MS in Computer Science this June 2024.</p>
-                <a href="https://cs.wwu.edu/chris90"><p><button class="button">View my page on the Graduate Student Directory</button></p></a>
-              </div>
-          </div>
-      </div>
-
-      <div class="column">
-        <div class="card">
-          <img src="images/tmobile.jpeg" alt="TMobile" style="width:95%">
-          <div class="container">
-            <h2>Software Engineer Intern</h2>
-            <p class="title">T-Mobile - Digital AI/ML, Bellevue, WA</p>
-            <p>June 2023 - September 2023</p>
-            <a href="projects.html"><p><button class="button">Read about my internship project here</button></p></a>
-          </div>
-        </div>
-      </div>
-
-      <div class="column">
-        <div class="card">
-          <img src="images/isb.jpeg" alt="ISB" style="width:100%">
-          <div class="container">
-            <h2>Software Engineer Intern</h2>
-            <p class="title">Institute for Systems Biology (ISB), Seattle, WA</p>
-            <p>June 2022 - September 2022</p>
-            <a href="projects.html"><p><button class="button">Read about my internship project here</button></p></a>
-          </div>
-        </div>
-      </div>
-
-      
-  </div>
-  
-  <div class="row">
-    <div class="column">
-      <div class="card">
-        <img src="images/scholarsweek.JPG" alt="scholarsweek" style="width:89%">
-        <div class="container">
-          <h2>Machine Learning Research Assistant</h2>
-          <p class="title">Hutchinson Machine Learning Research Group</p>
-          <p>Graduate Research Assistant: 2023-Present<br>Undergraduate Research Assistant: 2022-2023</p>
-          <a href="projects.html"><p><button class="button">Read about my research projects here</button></p></a>
-        </div>
-      </div>
+<body>
+    <div class="content">
+        <section class="intro">
+            <img src="images/good/headshot_2.JPG" alt="Headshot">
+            <div class="intro-text">
+                <h2>Hi, I'm Katie Christensen!</h2>
+                <p>Welcome to my portfolio.</p>
+            </div>
+        </section>
+        <section class="details">
+            <div class="detail">
+                <img src="images/good/grad2024.jpg" alt="MS headshot">
+                <p>MS in Computer Science from Western Washington University.</p>
+            </div>
+            <div class="detail">
+                <img src="images/good/grad2023.jpg" alt="BS headshot">
+                <p>BS in Computer Science and Minor in Biology from Western Washington University.</p>
+            </div>
+            <div class="detail">
+                <img src="images/good/ICLR.jpg" alt="ICLR headshot">
+                <p>I recently attended the International Conference on Learning Representations (ICLR)
+                    where I presented my research at the Tackling Climate Change with Machine Learning Workshop in Vienna, Austria.</p>
+            </div>
+        </section>
+        <section class="scrolling-text">
+            <h2>Scroll down to learn more!</h2>
+        </section>
+        <section class="more-info">
+            <p>I do machine learning (specifically deep learning) research for climate science and bioinformatics. </p>
+            <p>Check out my latest publications: <br> <br>
+              <b>Katie Christensen</b>, Lyric Otto, Seth Bassetti, Claudia Tebaldi, and Brian Hutchinson. 
+              Diffusion-Based Joint Temperature and Precipitation Emulation of Earth System Models. 
+              Tackling Climate Change with Machine Learning Workshop (TCCML) at ICLR, Vienna, Austria, 2024, 
+              <a href="https://arxiv.org/abs/2404.08797">https://arxiv.org/abs/2404.08797</a>.
+              <br> <br>
+              Sarah Coffland, <b>Katie Christensen</b>, Filip Jagodzinski, and Brian Hutchinson. 
+              RoseNet: Predicting Energy Metrics of Double InDel Mutants Using Deep Learning. 
+              Computational Structural Bioinformatics Workshop (CSBW) at ACM-BCB 2023, 
+              <a href="https://arxiv.org/abs/2310.13806">https://arxiv.org/abs/2310.13806</a>.
+            </p>
+            <p>Feel free to explore my portfolio and learn more about my work!</p>
+        </section>
     </div>
-  
-    <div class="column">
-        <div class="card">
-            <img src="images/headshot02.JPG" alt="ta" style="width:99%">
-            <div class="container">
-                <h2>Graduate Teaching Assistant</h2>
-                <p class="title">Full-Time, CS Department</p>
-                <p>Fostering a dynamic learning environment, encouraging active student participation and critical thinking.</p>
-                <a href="https://cs.wwu.edu/chris90"><p><button class="button">View my page on the Graduate Student Directory</button></p></a>
-              </div>
-          </div>
-      </div>
-
-      <div class="column">
-        <div class="card">
-          <img src="images/agic.jpg" alt="agic" style="width:100%">
-          <div class="container">
-            <h2>Outreach Coordinator and Active Member</h2>
-            <p class="title">Association for Gender Inclusion in Computing</p>
-            <p>Previously Association for Women in Computing.<br>Girls Who Code College Loop.</p>
-            <a href="https://www.instagram.com/wwuagic/"><p><button class="button">Read about our club</button></p></a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-
 </body>
 </html>
