@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
@@ -29,162 +29,143 @@
          </li>
             
         </ul>
-        <a href="index.html"><img src="images/name.png" alt="KC" class="corner-image"></a>
+        <a href="index.html"><img src="images/good/KC_new.gif" alt="KC" class="corner-image"></a>
     </nav>
 </header>
 
 <style>
-html {
-  box-sizing: border-box;
+.content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-*, *:before, *:after {
-  box-sizing: inherit;
+.intro {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
-.column {
-  float: left;
-  width: 33.33%;
-  margin-bottom: 16px;
-  padding: 0 8px;
+.intro img {
+    border-radius: 50%;
+    margin-right: 20px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
 }
 
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 8px;
-  color: #192231;
-  text-align: center;
+.intro-text h2 {
+    margin: 0 0 10px 0;
 }
 
-.card:hover {
-  box-shadow: 0 8px 12px 0 #E7B7A0;
+.details {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-.about-section {
-  padding: 30px;
-  text-align: center;
-  background-color: #192231;
-  color: #EFE6DD;
+.detail {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.container {
-  padding: 0 16px;
+.detail img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 10px;
 }
 
-.container::after, .row::after {
-  content: "";
-  clear: both;
-  display: table;
+.scrolling-text {
+    text-align: center;
+    margin: 40px 0;
 }
 
-.title {
-  color: grey;
+.scrolling-text h2 {
+    animation: scroll 5s linear infinite;
 }
 
-.button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #B97836;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
+@keyframes scroll {
+    0% { opacity: 0; transform: translateY(20px); }
+    50% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; transform: translateY(-20px); }
 }
 
-.button:hover {
-  background-color: #E6B370;
+.more-info {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
 }
 
-@media screen and (max-width: 650px) {
-  .column {
-    width: 100%;
-    display: block;
-  }
-}
 </style>
-
-<div class="about-section">
-    <h1>Recent Projects</h1>
-    <p>Read about my recent projects and publications.</p>
-  </div>
-  
-  <div class="row">
-    <div class="column">
-      <div class="card">
-        <img src="images/scholarsweek.JPG" alt="ESMDiff" style="width:100%">
-        <div class="container">
-          <h2>ML Research Assistant</h2>
-          <p class="title">Hutchinson Machine Learning Research Group</p>
-          <p>Generating joint precipitation and temperature spatio-temporal samples by emulating Earth System Models using Diffusion Models through <a href="https://fw.cs.wwu.edu/~hutchib2/hutchresearch.html">HutchResearch</a>. <br><br> Here, I am presenting at Scholars Week at WWU.</p>
-          <p><button class="button">Check back soon for our latest paper</button></p>
-        </div>
-      </div>
+<body>
+    <div class="content">
+        <section class="intro">
+            <div class="intro-text">
+                <h2>Take a look at my recent projects</h2>
+            </div>
+        </section>
+        <section class="details">
+            <div class="detail">
+                <img src="images/good/Diff_ScholarsWeek.jpg" alt="Climate project">
+                <p><b>ML Research Assistant</b><br>
+                    Generating joint precipitation and temperature spatio-temporal samples by emulating 
+                    Earth System Models using Diffusion Models through 
+                    <a href="https://fw.cs.wwu.edu/~hutchib2/hutchresearch.html">HutchResearch</a>.</p>
+            </div>
+            <div class="detail">
+                <img src="images/good/bio_poster.jpg" alt="Bio project">
+                <p><b>ML Research Assistant</b><br>
+                    Developing neural network architectures to predict energy metrics of proteins with double 
+                    insertion or deletion (InDel) mutations through 
+                    <a href="https://fw.cs.wwu.edu/~hutchib2/hutchresearch.html">HutchResearch</a>.</p>
+            </div>
+            <div class="detail">
+                <img src="images/good/tmobile.jpg" alt="T-Mobile headshot">
+                <p><b>Software Engineer Intern, T-Mobile</b><br>
+                    Leveraged customer digital behavior for proactive churn and call to Care reduction by 
+                    identifying web pages with elevated churn and call rates.</p>
+            </div>
+            <div class="detail">
+                <img src="images/good/ISB.jpg" alt="ISB headshot">
+                <p><b>Software Engineer Intern, Institute for Systems Biology</b><br>
+                    Developed a graph-based application programming interface designed to expose knowledge graphs.</p>
+            </div>
+            <div class="detail">
+                <p><b>CS Mentoring Program</b><br>
+                    Cultivate supportive and inclusive mentoring relationships with declared CS students and undeclared 
+                    students interested in pursuing any major in the CS Department at WWU.</p>
+            </div>
+            <!-- <div class="detail">
+                <p><b>Cluster Based Analysis on Video Game Sales</b><br>
+                    Video games are organized into clusters based on sales information from three regions around the world.
+                    Partitioning and hierarchical-based algorithms were evaluated including Agglomerative, K-Means, and 
+                    MeanShift clustering.</p>
+            </div> -->
+            <div class="detail">
+                <p><b>Imposter Syndrome Workshop</b><br>
+                    Led a workshop on Imposter Syndrome to the Department of Computer Science at WWU.</p>
+            </div>
+            <div class="detail">
+                <p><b>Lecture on Genetic Algorithms</b><br>
+                    Led a lecture on Genetic Algorithms in the Machine Learning 
+                    course of the Department of Computer Science at WWU.</p>
+            </div>
+        </section>
+        <!-- <section class="scrolling-text">
+            <h2>Scroll down to learn more!</h2>
+        </section>
+        <section class="more-info">
+            <p>Can place extra information here.</p>
+        </section> -->
     </div>
-
-    <div class="column">
-      <div class="card">
-        <img src="images/bioscholarsweek.JPG" alt="Bio" style="width:95%">
-        <div class="container">
-          <h2>ML Research Assistant</h2>
-          <p class="title">Hutchinson Machine Learning Research Group</p>
-          <p>Predicting Rosetta metrics for unseen mutant amino acid sequences with double InDel mutations through <a href="https://fw.cs.wwu.edu/~hutchib2/hutchresearch.html">HutchResearch</a>.<br><br> Here, I am presenting at Scholars Week at WWU.</p>
-          <a href="https://arxiv.org/abs/2310.13806"><p><button class="button">Check out our latest paper</button></p></a>
-        </div>
-      </div>
-    </div>
-
-    <div class="column">
-        <div class="card">
-          <img src="images/selfie.JPG" alt="TMobile" style="width:100%">
-          <div class="container">
-            <h2>Software Engineer Intern</h2>
-            <p class="title">T-Mobile - Digital AI/ML, Bellevue, WA</p>
-            <p>Leveraged customer digital behavior for proactive churn and call to Care reduction by identifying web pages with elevated churn and call rates.<br><br> Here is a selfie with CEO Mike Sievert.</p>
-            <a href="https://careers.t-mobile.com/meet-our-teams/technology/product-technology/"><p><button class="button">Read about the Technology organization at T-Mobile</button></p></a>
-          </div>
-        </div>
-      </div>
-  </div>
-
-  <div class="row">
-    <div class="column">
-        <div class="card">
-          <img src="images/isbposter.jpg" alt="ISB" style="width:100%">
-          <div class="container">
-            <h2>Software Engineer Intern</h2>
-            <p class="title">Institute for Systems Biology (ISB), Seattle, WA</p>
-            <p>Developed a graph-based application programming interface designed to expose knowledge graphs.<br><br>Here, I am presenting at a poster session at ISB.</p>
-            <a href="https://isbscience.org/people/labs/shmulevich-lab/"><p><button class="button">Read about the Schmulevich Lab at ISB</button></p></a>
-          </div>
-        </div>
-      </div>
-
-      <div class="column">
-        <div class="card">
-          <img src="images/imposter.jpg" alt="AGIC" style="width:100%">
-          <div class="container">
-            <h2>Imposter Syndrome Workshop</h2>
-            <p class="title">Department of Computer Science</p>
-            <p>Led a workshop on Imposter Syndrome to the CS Department at WWU through the Association for Gender Inclusion in Computing.</p>
-            <a href="https://www.instagram.com/wwuagic/"><p><button class="button">Read about our club</button></p></a>
-          </div>
-        </div>
-      </div>
-
-    <div class="column">
-        <div class="card">
-          <img src="images/GA.jpg" alt="GA" style="width:100%">
-          <div class="container">
-            <h2>Lecture on Genetic Algorithms</h2>
-            <p class="title">Department of Computer Science</p>
-            <p>Led a lecture on Genetic Algorithms in the Machine Learning course at WWU.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-        
-
 </body>
 </html>
