@@ -4,24 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Katie Christensen</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
+                <!-- <li><a href="index.html">Home</a></li> -->
+                <li><a href="src/about.html">About</a></li>
+                <li><a href="src/projects.html">Projects</a></li>
                 <li class="dropdown">
-                  <a href="#" class="dropbtn"><a href="publications.html">Publications</a></a>
+                  <a href="#" class="dropbtn"><a href="src/publications.html">Publications</a></a>
                     <div class="dropdown-content">
                       <a href="https://scholar.google.com/citations?user=mkES_psAAAAJ&hl=en&oi=sra">Google Scholar</a>
                       <a href="https://orcid.org/0009-0004-3270-7964">ORCID</a>
                     </div>
                </li>
                <li class="dropdown">
-                <a href="#" class="dropbtn"><a href="contact.html">Contact</a></a>
+                <a href="#" class="dropbtn"><a href="src/contact.html">Contact</a></a>
                   <div class="dropdown-content">
                     <a href="https://www.linkedin.com/in/katie-r-christensen/">LinkedIn</a>
                     <a href="https://github.com/katiechristensen">GitHub</a>
@@ -60,6 +60,22 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    /* text-align: center; */
+}
+
+.text-section h1 {
+    font-size: 3rem; /* Increased the font size */
+    font-weight: bold; /* Made the text bold */
+}
+
+.text-section h3 {
+    font-size: 1.4rem; /*Increased the font size*/
+    margin-top: 10px;  /* Added some spacing*/
+}
+
+.text-section p {
+    font-size: 1.2rem; /* Increased font size for regular text */
+    line-height: 1.6; /* Improved line spacing */
 }
 
 .image-section {
@@ -78,12 +94,12 @@ body {
 
   <div class="container">
     <div class="text-section">
-        <h1>Hello! I'm Katie Christensen.</h1>
-        <h2>MS Computer Science</h2>
-        <p>Western Washington University, June 2024</p>
+        <h1>Katie Christensen</h1>
+        <h3>MS Computer Science</h3>
+        <!-- <p>Western Washington University, June 2024</p> -->
     </div>
     <div class="image-section">
-        <img src="images/good/headshot.JPG" alt="Picture of Katie Christensen">
+        <img src="images/headshot.JPG" alt="Picture of Katie Christensen">
     </div>
   </div>
 
